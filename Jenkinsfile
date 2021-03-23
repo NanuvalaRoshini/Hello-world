@@ -4,7 +4,7 @@ pipeline {
         PATH = "/opt/apache-maven-3.6.3/bin:$PATH"
     }
     stages {
-        stage("clone code"){
+        stage("clone code from git"){
             steps{
                git 'https://github.com/NanuvalaRoshini/hello-world-main.git'
             }
